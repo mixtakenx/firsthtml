@@ -28,8 +28,43 @@
     
         
       }
+      .button {
+          display: inline-flex;
+          height: 50px;
+          padding: 0;
+          background:lavender;
+          border: 0;
+          border-radius: 10px;
+          outline: none;
+          overflow: hidden;
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
+      }
+      .button:hover {
+          background: rgb(180, 180, 201)
+      }
+      .button:active {
+          background: rgb(139, 139, 209)
+      }
+      .button__text,
+      .button__icon {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 24px;
+        color: plum;
+        height: 100%;
+      }
+
+      .button__icon {
+          font-size: 1.5em;
+      }
+    
+
+      
       p {
-        font-family: 'bodyFont', sans-serif;
+        font-family: 'Roboto', sans-serif;
       }
       h2.socials {
         font-weight: bold;
@@ -37,6 +72,7 @@
         font-family: 'freshLychee', sans-serif;
         color: black;
       }
+  
     </style>
   </head>
   <body>
@@ -47,9 +83,16 @@
     <h2 class="socials">these are my socials</h2>
 
     <p>
+        <a href="http://instagram.com/mixtakenx">
+       <button type="button" class="button">
        
-     <a href="http://instagram.com/mixtakenx">instagram</a>
+           <span class="button__icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+           </span>
+       </button>
+    </a>
         
     </p>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   </body>
 </html>
