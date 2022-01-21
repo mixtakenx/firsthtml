@@ -12,13 +12,16 @@
         }
         body {
             background-color:  beige;
+       
+  
         }
-      img {
+      img.zhongli {
         width: 100px;
         border-radius: 10px;
         float: left;
-        margin-right: 10px;
+        margin-right: auto;
       }
+
 
       h1.title {
         font-weight: bold;
@@ -41,14 +44,16 @@
           font-size: 16px;
           font-weight: 500;
           cursor: pointer;
+     
+          
       }
       .button:hover {
-          background: rgb(180, 180, 201)
+          background: rgb(221, 221, 236)
       }
       .button:active {
           background: rgb(139, 139, 209)
       }
-      .button__text,
+   
       .button__icon {
         display: inline-flex;
         align-items: center;
@@ -56,12 +61,9 @@
         color: plum;
         height: 100%;
       }
-
-      .button__icon {
-          font-size: 1.5em;
-      }
-    
-
+    .button__icon {
+        font-size: 1.5em;
+    }
       
       p {
         font-family: 'Roboto', sans-serif;
@@ -72,25 +74,29 @@
         font-family: 'freshLychee', sans-serif;
         color: black;
       }
+
   
     </style>
+    <title>akens page</title>
   </head>
   <body>
-    <img src="images/childe.png" alt="testing" />
+    <img class="zhongli"src="images/childe.png" alt="testing" />
     <h1 class="title">about me</h1>
     <p>hey, my name is aken. i love coding javascript (node.js) and i am currently learning how to build a website!  </p>
-    <img src="images/arataki.png" alt="ayaka">
-    <h2 class="socials">these are my socials</h2>
-
+   
     <p>
-        <a href="http://instagram.com/mixtakenx">
+        
+        <a href="aboutme.html">
        <button type="button" class="button">
-       
+      
            <span class="button__icon">
-            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="share-social-outline"></ion-icon>
            </span>
+           
        </button>
     </a>
+
+
         
     </p>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
