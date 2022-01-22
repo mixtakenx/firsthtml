@@ -131,8 +131,8 @@ box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
 
 [data-tooltip]::after {
     position: absolute;
-    width: 140px;
-    left: calc(50% - 70px);
+    width: 70px;
+    left: calc(50% - 35px);
 
     bottom: 125%;
     text-align: center;
@@ -140,7 +140,7 @@ box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
     color: white;
     background-color: black;
     padding: 8px;
-    font-size: 0.9em;
+    font-size: 0.5em;
     font-weight: bold;
     border-radius: 10px;
     content: attr(data-tooltip);
