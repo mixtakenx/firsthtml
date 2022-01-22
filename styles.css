@@ -2,11 +2,49 @@
     font-family: freshLychee;
     src: url(fonts/Fresh\ Lychee.ttf);
 }
-.dark-background {
-    background-color: rgb(214, 179, 210);
-    border-radius: 4px;
-    box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+@font-face {
+    font-family: manropeExBold;
+    src: url(fonts/manrope-extrabold.otf);
 }
+@font-face {
+    font-family: manropeBold;
+    src: url(fonts/manrope-bold.otf);
+}
+
+
+.container > div {
+    background: rgba(0,0,0, 0.1);
+    padding: 1em;
+    box-shadow: 0 25px 45px rgba(0,0,0, 0.1);
+     /**
+    border: 1px solid rgba(255, 255 ,255, 0.5);
+   
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    **/
+    z-index: 10;
+    backdrop-filter: blur(25px);
+    font-family: manropeBold;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.container > div:hover {
+    box-shadow: -15px 30px 50px rgba(0,0,0, 0.5);
+    transform: scale(1) translateY(-10px);
+    z-index: 1000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 30%;
+    grid-gap: 1em;
+  
+    
+    
+}
+
+
 
 .body {
     background-color: rgb(168, 168, 151);
@@ -16,22 +54,18 @@
     margin-left: 4px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500px;
-    margin-bottom: 10px;
+    margin-left: 30px;
 }
 
-.description {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
 
 .title {
-font-family: freshLychee;
+font-family: manropeExBold;
 background-image: linear-gradient(90deg, rgb(3, 2, 3),rgb(67, 67, 75));
 background-size: 0% 3px;
 background-repeat: no-repeat;
 background-position: left bottom;
 font-size: 50px;
-transition: background-size 300ms ease;;
+transition: background-size 300ms ease;
  text-align: center;
 border-radius: 4px;
 background-color: beige;
@@ -39,8 +73,13 @@ color: rgb(142, 111, 148);
 box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
 text-shadow: 0 10px 10px rgba(0,0,0, 0.1);
 
-}
 
+}
+.title:hover {
+background-size: 100% 3px;
+
+}
+    
 img.zhongli {
     width: 75px;
     
@@ -51,77 +90,12 @@ img.zhongli {
   }
 
 
-.title:hover {
-    background-size: 100% 3px;
-}
 
-.twitter {
-    display: inline-flex;
-    height: 50px;
-    padding: 0;
-    background:lavender;
-    border: 0;
-    border-radius: 10px;
-    outline: none;
-    
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-margin: 8px;
+
+.bio_image {
+border-radius: 8px;
+width: 100px;
 box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
-    
-}
-.twitter:hover {
-    background: rgb(221, 221, 236)
-}
-.twitter:active {
-    background: rgb(139, 139, 209)
-}
-
-.twitter__icon {
-  display: inline-flex;
-  align-items: center;
-  padding: 0 24px;
-  color: plum;
-  height: 45px;
-}
-.twitter__icon {
-  font-size: 1.5em;
-}
-.instagram {
-    display: inline-flex;
-    height: 50px;
-    padding: 0;
-    background:lavender;
-    border: 0;
-    border-radius: 10px;
-    outline: none;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-margin: 8px;
-box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
-    
-}
-.instagram:hover {
-    background: rgb(221, 221, 236)
-}
-.instagram:active {
-    background: rgb(139, 139, 209)
-}
-
-.instagram__icon {
-  display: inline-flex;
-  align-items: center;
-  padding: 0 24px;
-  color: plum;
-  height: 45px;
-}
-.instagram__icon {
-  font-size: 1.5em;
 }
 
 [data-tooltip] {
@@ -140,7 +114,7 @@ box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
     color: white;
     background-color: black;
     padding: 8px;
-    font-size: 0.5em;
+    font-size: 0.4em;
     font-weight: bold;
     border-radius: 10px;
     content: attr(data-tooltip);
@@ -157,7 +131,7 @@ box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
     visibility: visible;
 }
 
-.github {
+.button {
     display: inline-flex;
     height: 50px;
     padding: 0;
@@ -166,28 +140,34 @@ box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
     border-radius: 10px;
     outline: none;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: manropeBold;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
 margin: 8px;
 box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+opacity: 1;
+transition: 0.3s;
     
 }
-.github:hover {
-    background: rgb(221, 221, 236)
+.button:hover {
+    background: rgb(221, 221, 236);
+    transform: translateY(-5px)
+    
 }
-.github:active {
+.button:active {
     background: rgb(139, 139, 209)
 }
 
-.github__icon {
+.button__icon {
   display: inline-flex;
   align-items: center;
   padding: 0 24px;
-  color: plum;
+  color: black;
+  opacity: 1;
   height: 45px;
 }
-.github__icon {
+.button__icon {
   font-size: 1.5em;
-}s
+}
+
