@@ -1,0 +1,193 @@
+@font-face {
+    font-family: freshLychee;
+    src: url(fonts/Fresh\ Lychee.ttf);
+}
+.dark-background {
+    background-color: rgb(214, 179, 210);
+    border-radius: 4px;
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+}
+
+.body {
+    background-color: rgb(168, 168, 151);
+}
+.white-text {
+    color: white;
+    margin-left: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.title {
+font-family: freshLychee;
+background-image: linear-gradient(90deg, rgb(3, 2, 3),rgb(67, 67, 75));
+background-size: 0% 3px;
+background-repeat: no-repeat;
+background-position: left bottom;
+font-size: 50px;
+transition: background-size 300ms ease;;
+ text-align: center;
+border-radius: 4px;
+background-color: beige;
+color: rgb(142, 111, 148);
+box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+text-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+
+}
+
+img.zhongli {
+    width: 75px;
+    
+  
+    float: left;
+    margin-right: 5px;
+    
+  }
+
+
+.title:hover {
+    background-size: 100% 3px;
+}
+
+.twitter {
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background:lavender;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+margin: 8px;
+box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+    
+}
+.twitter:hover {
+    background: rgb(221, 221, 236)
+}
+.twitter:active {
+    background: rgb(139, 139, 209)
+}
+
+.twitter__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: plum;
+  height: 45px;
+}
+.twitter__icon {
+  font-size: 1.5em;
+}
+.instagram {
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background:lavender;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+margin: 8px;
+box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+    
+}
+.instagram:hover {
+    background: rgb(221, 221, 236)
+}
+.instagram:active {
+    background: rgb(139, 139, 209)
+}
+
+.instagram__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: plum;
+  height: 45px;
+}
+.instagram__icon {
+  font-size: 1.5em;
+}
+
+[data-tooltip] {
+    position: relative;
+    cursor: default;
+}
+
+[data-tooltip]::after {
+    position: absolute;
+    width: 140px;
+    left: calc(50% - 70px);
+
+    bottom: 125%;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 10px;
+    content: attr(data-tooltip);
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.github {
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background:lavender;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+margin: 8px;
+box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+    
+}
+.github:hover {
+    background: rgb(221, 221, 236)
+}
+.github:active {
+    background: rgb(139, 139, 209)
+}
+
+.github__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: plum;
+  height: 45px;
+}
+.github__icon {
+  font-size: 1.5em;
+}

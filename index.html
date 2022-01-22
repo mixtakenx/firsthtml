@@ -1,104 +1,68 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-        @font-face {
-            font-family: 'freshLychee';
-            src: url(fonts/Fresh\ Lychee.ttf);
-        }
-        @font-face {
-            font-family: 'bodyFont';
-            src: url(fonts/Stop\ Bullying.ttf);
-        }
-        body {
-            background-color:  beige;
-       
-  
-        }
-      img.zhongli {
-        width: 100px;
-        border-radius: 10px;
-        float: left;
-        margin-right: auto;
-      }
-
-
-      h1.title {
-        font-weight: bold;
-        background-color:rgb(243, 229, 171);
-        font-family: 'freshLychee', sans-serif;
-        color: black;
-    
-        
-      }
-      .button {
-          display: inline-flex;
-          height: 50px;
-          padding: 0;
-          background:lavender;
-          border: 0;
-          border-radius: 10px;
-          outline: none;
-          overflow: hidden;
-          font-family: 'Roboto', sans-serif;
-          font-size: 16px;
-          font-weight: 500;
-          cursor: pointer;
-     
-          
-      }
-      .button:hover {
-          background: rgb(221, 221, 236)
-      }
-      .button:active {
-          background: rgb(139, 139, 209)
-      }
-   
-      .button__icon {
-        display: inline-flex;
-        align-items: center;
-        padding: 0 24px;
-        color: plum;
-        height: 100%;
-      }
-    .button__icon {
-        font-size: 1.5em;
-    }
-      
-      p {
-        font-family: 'Roboto', sans-serif;
-      }
-      h2.socials {
-        font-weight: bold;
-        background-color:rgb(243, 229, 171);
-        font-family: 'freshLychee', sans-serif;
-        color: black;
-      }
-
-  
-    </style>
-    <title>akens page</title>
-  </head>
-  <body>
-    <img class="zhongli"src="images/childe.png" alt="testing" />
-    <h1 class="title">about me</h1>
-    <p>hey, my name is aken. i love coding javascript (node.js) and i am currently learning how to build a website!  </p>
-   
-    <p>
-        
-        <a href="aboutme.html">
-       <button type="button" class="button">
-      
-           <span class="button__icon">
-            <ion-icon name="share-social-outline"></ion-icon>
-           </span>
-           
-       </button>
-    </a>
-
-
-        
-    </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first website</title>
+    <link rel="stylesheet" href="styles.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  </body>
+    <style>
+        body {
+            background-color: rgb(161, 144, 184);
+        
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="titlescreen">
+        <img class="zhongli"src="images/childe.png" alt="">
+    <h1 class="title">aken.</h1>
+   
+</div>
+    <div class="container">
+        
+        <p class="description">hello, my name is aken! i am a javascript developer (node.js) that is currently learning 
+           html and css!
+        </p>
+     
+       
+    </div>
+  
+
+    </div>
+    <div class="dark-background">
+        <p class="white-text">my socials are located below, please support me if you can!</p>
+    
+      
+        <a href="https://twitter.com/mixtakenx">
+            <button type="button" class="twitter">
+           
+             
+                    <span data-tooltip="Twitter" class="twitter__icon">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </span>
+                   
+                
+        </a>
+        <a href="https://instagram.com/mixtakenx">
+            <button type="button" class="instagram">
+               
+                <span data-tooltip="Instagram" class="instagram__icon">
+                   
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </span>
+        </a>
+        <a href="https://github.com/mixtakenx">
+            <button type="button" class="github">
+               
+                <span data-tooltip="Github" class="github__icon">
+                   
+                    <ion-icon name="logo-github"></ion-icon>
+                </span>
+        </a>
+    </div>
+
+</body>
 </html>
