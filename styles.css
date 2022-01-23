@@ -16,15 +16,15 @@
     background: rgba(0,0,0, 0.1);
     padding: 1em;
     box-shadow: 0 25px 45px rgba(0,0,0, 0.1);
-     /**
+     
     border: 1px solid rgba(255, 255 ,255, 0.5);
    
     border-right: 1px solid rgba(255,255,255,0.2);
     border-bottom: 1px solid rgba(255,255,255,0.2);
-    **/
+    
     z-index: 10;
     backdrop-filter: blur(25px);
-    font-family: 'manropeBold', sans-serif;
+    font-family: manropeBold;
     transition: 0.5s;
     border-radius: 10px;
 }
@@ -37,7 +37,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 40% 30%;
+    grid-template-columns: 30% 30%;
     grid-gap: 1em;
   
     
@@ -59,6 +59,7 @@
 
 
 .title {
+
 font-family: 'manropeExBold';
 background-image: linear-gradient(90deg, rgb(3, 2, 3),rgb(67, 67, 75));
 background-size: 0% 3px;
@@ -70,14 +71,13 @@ transition: background-size 300ms ease;
 border-radius: 4px;
 background-color: beige;
 color: rgb(142, 111, 148);
-box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
-text-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+
+
 
 
 }
 .title:hover {
-background-size: 100% 3px;
-
+    background-size: 100% 3px;
 }
     
 img.zhongli {
@@ -105,7 +105,7 @@ box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
 
 [data-tooltip]::after {
     position: absolute;
-    width: 70px;
+    width: 70px;  
     left: calc(50% - 35px);
 
     bottom: 125%;
@@ -115,7 +115,6 @@ box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
     background-color: black;
     padding: 8px;
     font-size: 0.4em;
-    font-family: 'manropeBold';
     font-weight: bold;
     border-radius: 10px;
     content: attr(data-tooltip);
@@ -141,7 +140,7 @@ box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
     border-radius: 10px;
     outline: none;
     text-decoration: none;
-    font-family: 'manropeBold', sans-serif;
+    font-family: 'manropeBold' sans-serif;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -172,3 +171,16 @@ transition: 0.3s;
   font-size: 1.5em;
 }
 
+.card {
+    display: table;
+    background-color: gray;
+    font-family: 'manropeBold';
+    border-radius: 4px;
+}
+
+.avatar-image {
+    width: 75px;
+    margin-left: 8px;
+    border-radius: 4px;
+    float: left;
+}
